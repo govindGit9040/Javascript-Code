@@ -1,0 +1,24 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+    let myBtns=document.querySelectorAll('.content-itinerary__buttons');
+    myBtns.forEach(function(btn) {
+
+        btn.addEventListener('click', () => {
+          myBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+ 
+    });
+
+});
+.active {
+    color: #fff;
+    background-color: #4CAF50;
+}
+<div class="content-itinerary__buttons-wrapper">
+
+  <button class="content-itinerary__buttons description-text ">Day 2</button>
+  <button class="content-itinerary__buttons description-text">Day 3</button>
+  <button class="content-itinerary__buttons description-text">Day 4</button>
+
+</div>
